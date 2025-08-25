@@ -24,4 +24,26 @@ This project is a real-time, AI-assisted collaborative diagramming web applicati
 - `GET /health/websocket`: WebSocket-specific health check with test instructions
 
 See each folder's README for more details.
-\n## How to Run This Project\n\n1. **Install frontend dependencies:**\n   ```bash\n   cd frontend\n   npm install\n   ```\n\n2. **Return to the project root:**\n   ```bash\n   cd ..\n   ```\n\n3. **Build and start all services using Docker Compose:**\n   ```bash\n   docker-compose up --build\n   ```\n\nThis will install the frontend dependencies and start all services defined in your `docker-compose.yml`.
+
+## How to Run This Project
+
+1. **Install frontend dependencies:**
+
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+2. **Return to the project root:**
+
+   ```bash
+   cd ..
+   ```
+
+3. **Build and start all services using Docker Compose:**
+
+   ```bash
+   docker-compose up --build
+   ```
+
+This will install the frontend dependencies and start all services defined in your `docker-compose.yml`.
