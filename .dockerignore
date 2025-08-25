@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+SETUP.md
+
+# Environment files (except .env.example)
+.env
+
+# Test files
+test_*
+*.test.*
+**/*.test.*
+
+# Cache directories
+**/__pycache__
+**/.pytest_cache
+**/node_modules/.cache
+
+# Development files
+.vscode/
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~

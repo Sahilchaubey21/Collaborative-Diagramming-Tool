@@ -1,0 +1,18 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+python-dotenv
+# HTTP client for Gemini API
+requests
+python-socketio
+# MongoDB integration
+pymongo
+motor
+# Authentication & Security
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+# Additional utilities
+email-validator
+datetime
