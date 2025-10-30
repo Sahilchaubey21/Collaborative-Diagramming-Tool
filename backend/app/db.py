@@ -1,11 +1,21 @@
 import os
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
-from pymongo import MongoClient
-import asyncio
 from typing import Optional
+from dotenv import load_dotenv
+import asyncio
+
+print("📦 MONGO_URL from env:", os.getenv("MONGO_URL"))
+
+
+# ✅ Load environment variables from .env
+# This line ensures the .env file is read when app starts
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"))
+
+# ✅ Debug: confirm that env loaded
+print("Loaded Mongo URL:", os.getenv("MONGO_URL"))
 
 # Database Configuration
-MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017")
+MONGO_URL = os.getenv("MONGO_URL")
 DATABASE_NAME = os.getenv("DATABASE_NAME", "diagramming_app")
 
 class MongoDB:
